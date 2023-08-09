@@ -1,0 +1,170 @@
+body {
+    margin-top: 26cm;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bfbfbf;
+  }
+  
+  .grid-container {
+    background-color: rgb(0, 250, 221);
+    padding: 3ch;
+    display: grid;
+    border: 5px solid #1a1818;
+    border-radius: 15px;
+    grid-gap: 5px;
+  }
+ 
+  .field-1 {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+  }
+  
+  .block1 {
+    background-color: #6fff00;
+    padding: 10px;
+  }
+  .field-2{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+  }
+  
+  .block2 {
+    background-color: #6f8cff;
+    padding: 10px;
+  }
+  .field-3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 100px;
+    grid-gap: 5px;
+  }
+  
+  .block3 {
+    background-color: #e42929;
+    padding: 10px;
+  }
+  .field-4 {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-gap: 5px;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .block4 {
+    background-color: #ad13b2;
+    padding: 10px;
+  }
+  .field-5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+  }
+  
+  .block5::nth-child(1) {
+    align-self: flex-start;
+  }
+  
+  .block5  :nth-child(2) {
+    align-self: center;
+  }
+  
+  .block5 :nth-child(3) {
+    align-self: flex-end;
+  }
+  
+  .block5 {
+    background-color: #d4840c;
+    padding: 10px;
+  }
+  .field-6 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 50px);
+    grid-gap: 5px;
+  }
+  
+  .block6 {
+    background-color: #820790;
+    padding: 10px;
+  }
+  .field-7 {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 5px;
+  }
+  
+  .block7 {
+    background-color: #ffb300;
+    padding: 10px;
+  }
+  .field-8 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+  }
+  
+  .block8 {
+    background-color: #ef650f5b;
+    padding: 10px;
+  }
+  .field-9 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 5px;
+    grid-template-areas:
+      "a a b c c"
+      "a a d e e"
+      "f f d e e"
+      "g g h h h"
+      "i i h h h";
+  }
+  
+  .block9 {
+    background-color: #f2561e;
+    padding: 10px;
+  }
+  
+  .grid-item-a {
+    grid-area: a;
+  }
+  .grid-item-b {
+    grid-area: b;
+  }
+  
+  .grid-item-c {
+    grid-area: c;
+  }
+  
+  .grid-item-d {
+    grid-area: d;
+  }
+  
+  .grid-item-e {
+    grid-area: e;
+  }
+  
+  .grid-item-f {
+    grid-area: f;
+  }
+  
+  .grid-item-g {
+    grid-area: g;
+  }
+  
+  .grid-item-h {
+    grid-area: h;
+  }
+  
+  .grid-item-i {
+    grid-area: i;
+  }
